@@ -2,13 +2,11 @@
 
 #define columnas 13
 #define filas 13
-// Definimos los caracteres para representar el laberinto
 #define P '*'
 #define C ' '
 #define JUGADOR 'J'
 #define S 's'
 
-// Definimos el laberinto
 char laberinto[filas][columnas] = {
     {P, P, P, P, P, P, P, P, P, P, P, P, P},
     {P, C, P, C, C, C, C, P, C, C, P, P, P},
@@ -22,11 +20,10 @@ char laberinto[filas][columnas] = {
     {P, C, C, P, P, C, P, P, P, C, C, C, S},
     {P, P, P, P, P, P, P, P, P, P, P, P, P}, 
 };
-// Posición inicial del jugador
+
 int jugadorf = 1;
 int jugadorc = 1;
 
-// Función para imprimir el laberinto
 void imprimirLaberinto() {
     for (int i = 0; i < filas; i++) {
         for (int j = 0; j < columnas; j++) {
@@ -40,7 +37,6 @@ void imprimirLaberinto() {
     }
 }
 
-// Función para mover al jugador
 void moverJugador(char direccion) {
     int posicionf = jugadorf;
     int posicionc = jugadorc;
