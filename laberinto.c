@@ -59,7 +59,6 @@ void moverJugador(char direccion) {
 int main() {
     char movimiento;
     int continuar = 1; 
-
     printf("Bienvenido al laberinto!\n");
     printf("Usa 'a' (arriba), 's' (abajo), 'i' (izquierda), 'd' (derecha) para moverte.\n");
 
